@@ -22,7 +22,7 @@ export const loader: LoaderFunction = async ({ request }) => {
 
 export default function Login() {
   const [action, setAction] = useState("login");
-  const actionData = useActionData() as any;
+  const actionData = useActionData<typeof loader>();
   const firstLoad = useRef(true);
   const [errors, setErrors] = useState(actionData?.errors || {});
   const [formError, setFormError] = useState(actionData?.error || "");
