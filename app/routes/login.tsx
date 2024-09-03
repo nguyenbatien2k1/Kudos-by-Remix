@@ -62,9 +62,9 @@ export default function Login() {
     }
   }, [formData]);
 
-  useEffect(() => {
-    firstLoad.current = false;
-  }, []);
+  // useEffect(() => {
+  //   firstLoad.current = false;
+  // }, []);
 
   return (
     <Layout>
